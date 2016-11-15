@@ -4,9 +4,9 @@
 
 #include <GL/gl.h>
 #include <GL/glut.h>
-#include "CheckerPiece.h"
+#include "Piece.h"
 
-void CheckerPiece::DrawCheckerPiece(double x, double y, double z) {
+void Piece::DrawPiece(double x, double y, double z) {
 	glPushMatrix();
 	glTranslated(x, y, z);
 	glScaled(0.1, 0.1, 0.1);

@@ -6,9 +6,9 @@
 #define CHECKERS_CHECKERPIECE_H
 
 
-class CheckerPiece {
+class Piece {
 public:
-	void DrawCheckerPiece(double x, double y, double z);
+	void DrawPiece(double x, double y, double z);
 };
 
 

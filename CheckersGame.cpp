@@ -3,57 +3,14 @@
 //
 
 #include <GL/glut.h>
-#include "CheckerPiece.h"
 #include "CameraViewUtility.h"
+#include "Board.h"
+#include "Team.h"
 
-CheckerPiece checkerPiece;
 CameraViewUtility cameraViewUtility;
+Board board;
+Team team;
 
-void DrawRedTeam() {
-	cameraViewUtility.Lights(1.0f, 0.0f, 0.0f);
-
-	for(int x = 0; x < 4; x++) {
-		checkerPiece.DrawCheckerPiece(0.5 * x - 0.75, -0.8, 0);
-		checkerPiece.DrawCheckerPiece(0.5 * x - 1, -0.8, -0.25);
-	}
-}
-
-void DrawBlackTeam() {
-	cameraViewUtility.Lights(0.0f, 0.0f, 0.0f);
-
-	for(int x = 0; x < 4; x++) {
-		checkerPiece.DrawCheckerPiece(0.5 * x - 1, -0.8, -1.5);
-		checkerPiece.DrawCheckerPiece(0.5 * x - 0.75, -0.8, -1.75);
-	}
-}
-
-void DrawCube(double x, double y, double z) {
-	glPushMatrix();
-	glTranslated(x, y, z);
-	glScaled(0.25, 0.1, 0.25);
-	glutSolidCube(1.0);
-	glPopMatrix();
-}
-
-void DrawRedSquares() {
-	cameraViewUtility.Lights(1.0f, 0.0f, 0.0f);
-
-	for(int x = 0; x < 4; x++)
-		for(int z = 0; z < 4; z++) {
-			DrawCube(0.5 * x - 1, -0.9, z * -0.5);
-			DrawCube(0.5 * x - 0.75, -0.9, 0.5 * z - 1.75);
-		}
-}
-
-void DrawBlackSquares() {
-	cameraViewUtility.Lights(0.0f, 0.0f, 0.0f);
-
-	for(int x = 0; x < 4; x++)
-		for(int z = 0; z < 4; z++) {
-			DrawCube(x * 0.5 - 1.0, -0.9, z * -0.5 - 0.25);
-			DrawCube(0.5 * x  - 0.75, -0.9, z * -0.5);
-		}
-}
 
 void DrawCheckerBoardAndPieces() {
 	cameraViewUtility.SetView();
@@ -61,11 +18,9 @@ void DrawCheckerBoardAndPieces() {
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	DrawRedSquares();
-	DrawBlackSquares();
-
-	DrawRedTeam();
-	DrawBlackTeam();
+	board.DrawBoard();
+	team.DrawTeam("red");
+	team.DrawTeam("black");
 
 	glFlush();
 }
