@@ -11,6 +11,7 @@ CameraViewUtility cameraViewUtility;
 Board board;
 Team team;
 
+bool MoveBlackPiece = false;
 
 void DrawCheckerBoardAndPieces() {
 	cameraViewUtility.SetView();
@@ -19,10 +20,25 @@ void DrawCheckerBoardAndPieces() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	board.DrawBoard();
-	team.DrawTeam("red");
-	team.DrawTeam("black");
+	if(!MoveBlackPiece) {
+		team.DrawTeam("red");
+		team.DrawTeam("black");
+	}
+	else {
+		team.DrawTeam("red");
+		team.DrawTeam("black", MoveBlackPiece);
+	}
 
 	glFlush();
+}
+
+void Mouse(int button, int state, int x, int y) {
+	if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
+		MoveBlackPiece = true;
+	}
+	if(button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
+		MoveBlackPiece = false;
+	}
 }
 
 int main(int argc, char** argv){
@@ -32,6 +48,7 @@ int main(int argc, char** argv){
 	glutInitWindowSize(400, 400);
 	glutCreateWindow(argv[0]);
 	glutDisplayFunc(DrawCheckerBoardAndPieces);
+	glutMouseFunc(Mouse);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 	glShadeModel(GL_SMOOTH);

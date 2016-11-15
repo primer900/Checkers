@@ -8,7 +8,7 @@
 
 class Team {
 public:
-	void DrawTeam(const char * color);
+	void DrawTeam(const char * color, bool = false);
 };
 
 
