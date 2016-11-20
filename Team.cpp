@@ -36,29 +36,14 @@ void DrawRedTeam() {
 	}
 }
 
-void DrawBlackTeam(bool moveBlackPiece) {
+void DrawBlackTeam() {
 	cameraViewTeam.Lights(0.0f, 0.0f, 0.0f);
 
-	if(!moveBlackPiece) {
-		for(int x = 0; x < 4; x++) {
-			BlackPieces[x]->SetPosition(0.5 * x - 0.75, -0.8, -1.25);
-			BlackPieces[x]->DrawPiece();
-			fileUtility.WriteToFile(BlackPieces[x]->x, BlackPieces[x]->y, BlackPieces[x]->z, "BlackMove0.dat");
-		}
+	for(int x = 0; x < 4; x++) {
+		BlackPieces[x]->SetPosition(0.5 * x - 0.75, -0.8, -1.25);
+		BlackPieces[x]->DrawPiece();
+		fileUtility.WriteToFile(BlackPieces[x]->x, BlackPieces[x]->y, BlackPieces[x]->z, "BlackMove0.dat");
 	}
-
-	else {
-		BlackPieces[0]->SetPosition(-0.75, -0.8, -1);
-		BlackPieces[0]->DrawPiece();
-		fileUtility.WriteToFile(BlackPieces[0]->x, BlackPieces[0]->y, BlackPieces[0]->z, "BlackMove0.dat");
-
-		for(int x = 1; x < 4; x++) {
-			BlackPieces[x]->SetPosition(0.5 * x - 0.75, -0.8, -1.25);
-			BlackPieces[x]->DrawPiece();
-			fileUtility.WriteToFile(BlackPieces[x]->x, BlackPieces[x]->y, BlackPieces[x]->z, "BlackMove0.dat");
-		}
-	}
-
 	for(int x = 0; x < 4; x++) {
 		BlackPieces[x + 4]->SetPosition(0.5 * x - 1, -0.8, -1.5);
 		BlackPieces[x + 4]->DrawPiece();
@@ -78,12 +63,12 @@ void InitializePieces() {
 	}
 }
 
-void Team::DrawTeam(const char * color, bool moveBlackPiece) {
+void Team::DrawTeam(const char * color) {
 	InitializePieces();
 	if(strcmp(color, "red") == 0)
 		DrawRedTeam();
 	else if(strcmp(color, "black") == 0)
-		DrawBlackTeam(moveBlackPiece);
+		DrawBlackTeam();
 	else{
 		printf("There was an error in the inputting of teams");
 		exit(1);
