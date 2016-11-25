@@ -6,9 +6,12 @@
 #define CHECKERS_FILEUTILITY_H
 
 
+#include "Piece.h"
+
 class FileUtility {
 public:
 	void WriteToFile(double x, double y, double z, const char * file);
+	void ReadFromFileAndPopulateArray(Piece **temp, const char *file);
 };
 
 

@@ -13,8 +13,10 @@
 CameraViewUtility cameraViewTeam;
 FileUtility fileUtility;
 
-Piece * BlackPieces[12];
-Piece * RedPieces[12];
+const int sizeOfTeam = 12;
+Piece * BlackPieces[sizeOfTeam];
+Piece * RedPieces[sizeOfTeam];
+Piece * temp[sizeOfTeam];
 
 void DrawRedTeam() {
 	cameraViewTeam.Lights(1.0f, 0.0f, 0.0f);
@@ -38,7 +40,9 @@ void DrawRedTeam() {
 
 void DrawBlackTeam() {
 	cameraViewTeam.Lights(0.0f, 0.0f, 0.0f);
-
+/*	for(int x = 0; x < 12; x++) {
+		BlackPieces[x]->DrawPiece();
+	}*/
 	for(int x = 0; x < 4; x++) {
 		BlackPieces[x]->SetPosition(0.5 * x - 0.75, -0.8, -1.25);
 		BlackPieces[x]->DrawPiece();
@@ -56,15 +60,17 @@ void DrawBlackTeam() {
 	}
 }
 
-void InitializePieces() {
-	for(int i = 0; i < 12; i++) {
+void InitializeArrayWithEmptyPieces() {
+	for(int i = 0; i < sizeOfTeam; i++) {
 		RedPieces[i] = new Piece();
 		BlackPieces[i] = new Piece();
+		temp[i] = new Piece();
 	}
 }
 
 void Team::DrawTeam(const char * color) {
-	InitializePieces();
+	InitializeArrayWithEmptyPieces();
+	fileUtility.ReadFromFileAndPopulateArray(temp, "BlackMove0.dat");
 	if(strcmp(color, "red") == 0)
 		DrawRedTeam();
 	else if(strcmp(color, "black") == 0)
