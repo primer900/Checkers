@@ -20,8 +20,10 @@ Piece * temp[sizeOfTeam];
 
 void DrawRedTeam() {
 	cameraViewTeam.Lights(1.0f, 0.0f, 0.0f);
+	for(int x = 0; x < sizeOfTeam; x++)
+		RedPieces[x]->DrawPiece();
 
-	for(int x = 0; x < 4; x++) {
+/*	for(int x = 0; x < 4; x++) {
 		RedPieces[x]->SetPosition(0.5 * x - 1, -0.8, 0);
 		RedPieces[x]->DrawPiece();
 		fileUtility.WriteToFile(RedPieces[x]->x, RedPieces[x]->y, RedPieces[x]->z, "RedMove0.dat");
@@ -35,15 +37,15 @@ void DrawRedTeam() {
 		RedPieces[x + 8]->SetPosition(0.5 * x - 1, -0.8, -0.5);
 		RedPieces[x + 8]->DrawPiece();
 		fileUtility.WriteToFile(RedPieces[x + 8]->x, RedPieces[x + 8]->y, RedPieces[x + 8]->z, "RedMove0.dat");
-	}
+	}*/
 }
 
 void DrawBlackTeam() {
 	cameraViewTeam.Lights(0.0f, 0.0f, 0.0f);
-/*	for(int x = 0; x < 12; x++) {
+	for(int x = 0; x < sizeOfTeam; x++)
 		BlackPieces[x]->DrawPiece();
-	}*/
-	for(int x = 0; x < 4; x++) {
+
+/*	for(int x = 0; x < 4; x++) {
 		BlackPieces[x]->SetPosition(0.5 * x - 0.75, -0.8, -1.25);
 		BlackPieces[x]->DrawPiece();
 		fileUtility.WriteToFile(BlackPieces[x]->x, BlackPieces[x]->y, BlackPieces[x]->z, "BlackMove0.dat");
@@ -57,7 +59,7 @@ void DrawBlackTeam() {
 		BlackPieces[x + 8]->SetPosition(0.5 * x - 0.75, -0.8, -1.75);
 		BlackPieces[x + 8]->DrawPiece();
 		fileUtility.WriteToFile(BlackPieces[x + 8]->x, BlackPieces[x + 8]->y, BlackPieces[x + 8]->z, "BlackMove0.dat");
-	}
+	}*/
 }
 
 void InitializeArrayWithEmptyPieces() {
@@ -68,9 +70,13 @@ void InitializeArrayWithEmptyPieces() {
 	}
 }
 
-void Team::DrawTeam(const char * color) {
+void CreateArrayWithPieces() {
 	InitializeArrayWithEmptyPieces();
-	fileUtility.ReadFromFileAndPopulateArray(temp, "BlackMove0.dat");
+	fileUtility.ReadFromFileAndPopulateArray(BlackPieces, sizeOfTeam, "BlackMove0.dat");
+	fileUtility.ReadFromFileAndPopulateArray(RedPieces, sizeOfTeam, "RedMove0.dat");
+}
+void Team::DrawTeam(const char * color) {
+	CreateArrayWithPieces();
 	if(strcmp(color, "red") == 0)
 		DrawRedTeam();
 	else if(strcmp(color, "black") == 0)

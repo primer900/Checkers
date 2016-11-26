@@ -11,7 +11,7 @@
 class FileUtility {
 public:
 	void WriteToFile(double x, double y, double z, const char * file);
-	void ReadFromFileAndPopulateArray(Piece **temp, const char *file);
+	void ReadFromFileAndPopulateArray(Piece **team, int sizeOfTeam, const char *file);
 };
 
 
