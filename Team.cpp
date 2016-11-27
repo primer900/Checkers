@@ -2,9 +2,6 @@
 // Created by Chris Procak on 11/6/2016.
 //
 
-#include <cstring>
-#include <cstdio>
-#include <cstdlib>
 #include "Team.h"
 #include "CameraViewUtility.h"
 #include "Piece.h"
@@ -40,8 +37,8 @@ void DrawRedTeam() {
 	}*/
 }
 
-void DrawBlackTeam() {
-	cameraViewTeam.Lights(0.0f, 0.0f, 0.0f);
+void DrawGreenTeam() {
+	cameraViewTeam.Lights(0.0f, 1.0f, 0.0f);
 	for(int x = 0; x < sizeOfTeam; x++)
 		BlackPieces[x]->DrawPiece();
 
@@ -72,17 +69,11 @@ void InitializeArrayWithEmptyPieces() {
 
 void CreateArrayWithPieces() {
 	InitializeArrayWithEmptyPieces();
-	fileUtility.ReadFromFileAndPopulateArray(BlackPieces, sizeOfTeam, "BlackMove0.dat");
-	fileUtility.ReadFromFileAndPopulateArray(RedPieces, sizeOfTeam, "RedMove0.dat");
+	fileUtility.ReadFromFileAndPopulateArray(BlackPieces, sizeOfTeam, "BlackMove1.dat");
+	fileUtility.ReadFromFileAndPopulateArray(RedPieces, sizeOfTeam, "RedMove1.dat");
 }
-void Team::DrawTeam(const char * color) {
+void Team::DrawTeam() {
 	CreateArrayWithPieces();
-	if(strcmp(color, "red") == 0)
-		DrawRedTeam();
-	else if(strcmp(color, "black") == 0)
-		DrawBlackTeam();
-	else{
-		printf("There was an error in the inputting of teams");
-		exit(1);
-	}
+	DrawRedTeam();
+	DrawGreenTeam();
 }

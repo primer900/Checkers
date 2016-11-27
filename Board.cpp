@@ -27,8 +27,8 @@ void DrawRedSquares() {
 		}
 }
 
-void DrawBlackSquares() {
-	cameraViewBoard.Lights(0.0f, 0.0f, 0.0f);
+void DrawWhiteSquares() {
+	cameraViewBoard.Lights(1.0f, 1.0f, 1.0f);
 
 	for(int x = 0; x < 4; x++)
 		for(int z = 0; z < 4; z++) {
@@ -39,5 +39,5 @@ void DrawBlackSquares() {
 
 void Board::DrawBoard() {
 	DrawRedSquares();
-	DrawBlackSquares();
+	DrawWhiteSquares();
 }

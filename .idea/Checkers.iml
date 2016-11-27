@@ -2,20 +2,19 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/CheckerMoves" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CameraViewUtility.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Team.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/FileUtility.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Piece.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CameraViewUtility.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Team.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Piece.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/FileUtility.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CheckersGame.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Board.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Piece.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Board.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/BlackMoves" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CheckersGame.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Piece.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CameraViewUtility.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FileUtility.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Team.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CameraViewUtility.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FileUtility.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CheckerMoves" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

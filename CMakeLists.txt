@@ -10,7 +10,6 @@ set(CHECKERBOARD
         Board.cpp Board.h
         Team.cpp Team.h
         FileUtility.cpp FileUtility.h
-        CheckerMoves
-        BlackMoves)
+        CheckerMoves)
 add_executable(CheckerBoard ${CHECKERBOARD})
 target_link_libraries(CheckerBoard glew32 glew32s libopengl32.a libglu32.a libfreeglut.a)
