@@ -17,8 +17,8 @@ void DrawCube(double x, double y, double z) {
 	glPopMatrix();
 }
 
-void DrawRedSquares() {
-	cameraViewBoard.Lights(1.0f, 0.0f, 0.0f);
+void DrawGoldSquares() {
+	cameraViewBoard.Lights(0.792f, 0.659f, 0.020f);
 
 	for(int x = 0; x < 4; x++)
 		for(int z = 0; z < 4; z++) {
@@ -38,6 +38,6 @@ void DrawWhiteSquares() {
 }
 
 void Board::DrawBoard() {
-	DrawRedSquares();
+	DrawGoldSquares();
 	DrawWhiteSquares();
 }

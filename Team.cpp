@@ -16,7 +16,7 @@ Piece * RedPieces[sizeOfTeam];
 Piece * temp[sizeOfTeam];
 
 void DrawRedTeam() {
-	cameraViewTeam.Lights(1.0f, 0.0f, 0.0f);
+	cameraViewTeam.Lights(0.831f, 0.141f, 0.149f);
 	for(int x = 0; x < sizeOfTeam; x++)
 		RedPieces[x]->DrawPiece();
 
@@ -38,7 +38,7 @@ void DrawRedTeam() {
 }
 
 void DrawGreenTeam() {
-	cameraViewTeam.Lights(0.0f, 1.0f, 0.0f);
+	cameraViewTeam.Lights(0.235f, .553f, 0.051f);
 	for(int x = 0; x < sizeOfTeam; x++)
 		BlackPieces[x]->DrawPiece();
 
