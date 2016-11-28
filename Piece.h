@@ -9,9 +9,11 @@
 class Piece {
 public:
 	Piece();
-	void DrawPiece();
+	void DrawPiece(char state);
 	void SetPosition(double x_position, double y_position, double z_position);
+	void SetState(char state);
 	double x, y, z;
+	char State;
 	~Piece();
 };
 

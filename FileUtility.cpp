@@ -17,11 +17,13 @@ void FileUtility::WriteToFile(double x, double y, double z, const char * file) {
 void FileUtility::ReadFromFileAndPopulateArray(Piece **team, int sizeOfTeam, const char *file) {
 	ifstream move;
 	double x, y, z;
+	char state;
 	move.open(file);
 
 	for(int i = 0; i < sizeOfTeam; i ++) {
-		move >> x >> y >> z;
+		move >> x >> y >> z >> state;
 		team[i]->SetPosition(x, y , z);
+		team[i]->SetState(state);
 	}
 	move.close();
 }
