@@ -14,90 +14,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f77cfa1-a9ec-4bfd-81e1-b6ac65b043e6" name="Default" comment="Created rough draft of game moves">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove0.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove1.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove10.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove11.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove12.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove13.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove14.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove15.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove16.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove17.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove18.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove19.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove2.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove20.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove21.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove22.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove23.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove24.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove25.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove26.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove27.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove28.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove29.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove3.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove30.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove31.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove32.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove33.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove34.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove35.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove36.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove37.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove4.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove5.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove6.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove7.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove8.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/GreenMove9.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove10.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove11.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove12.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove13.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove14.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove15.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove16.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove17.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove18.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove19.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove2.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove20.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove21.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove22.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove23.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove24.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove25.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove26.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove27.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove28.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove29.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove3.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove30.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove31.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove32.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove33.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove34.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove35.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove36.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove37.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove4.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove5.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove6.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove7.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove8.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove9.dat" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CheckerMoves/BlackMove0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CheckerMoves/BlackMove1.dat" afterPath="" />
+    <list default="true" id="2f77cfa1-a9ec-4bfd-81e1-b6ac65b043e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CheckerMoves/RedMove0.dat" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CheckerMoves/RedMove1.dat" afterPath="$PROJECT_DIR$/CheckerMoves/RedMove1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileUtility.cpp" afterPath="$PROJECT_DIR$/FileUtility.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Piece.cpp" afterPath="$PROJECT_DIR$/Piece.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Piece.h" afterPath="$PROJECT_DIR$/Piece.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Team.cpp" afterPath="$PROJECT_DIR$/Team.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CheckersGame.cpp" afterPath="$PROJECT_DIR$/CheckersGame.cpp" />
     </list>
     <ignored path="Checkers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,11 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Team.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Team.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Team.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="396">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckersGame.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CheckersGame.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -187,7 +116,6 @@
         <option value="$PROJECT_DIR$/BlackMoves/BlackMove1.dat" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Team.h" />
-        <option value="$PROJECT_DIR$/CheckersGame.cpp" />
         <option value="$PROJECT_DIR$/CameraViewUtility.cpp" />
         <option value="$PROJECT_DIR$/Board.cpp" />
         <option value="$PROJECT_DIR$/FileUtility.cpp" />
@@ -200,6 +128,7 @@
         <option value="$PROJECT_DIR$/Piece.h" />
         <option value="$PROJECT_DIR$/Piece.cpp" />
         <option value="$PROJECT_DIR$/Team.cpp" />
+        <option value="$PROJECT_DIR$/CheckersGame.cpp" />
       </list>
     </option>
   </component>
@@ -489,7 +418,7 @@
       <workItem from="1479608469769" duration="1963000" />
       <workItem from="1480113059055" duration="4895000" />
       <workItem from="1480291760379" duration="10318000" />
-      <workItem from="1480344605217" duration="1872000" />
+      <workItem from="1480344605217" duration="2317000" />
     </task>
     <task id="LOCAL-00001" summary="Created 8 red squares on screen">
       <created>1477971522185</created>
@@ -596,23 +525,30 @@
       <option name="project" value="LOCAL" />
       <updated>1480292350598</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Created rough draft of game moves">
+      <created>1480346490488</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1480346490488</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79463000" />
+    <option name="totallyTimeSpent" value="79908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -688,6 +624,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,6 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -731,6 +669,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -747,6 +686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -763,6 +703,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -771,6 +712,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -779,6 +721,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -787,6 +730,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -795,6 +739,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -803,6 +748,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,13 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CheckersGame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -965,8 +904,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Team.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="396">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CheckersGame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>

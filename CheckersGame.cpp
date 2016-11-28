@@ -11,6 +11,11 @@ CameraViewUtility cameraViewUtility;
 Board board;
 Team team;
 
+enum Options {
+	START,
+	RESTART
+};
+
 void DrawCheckerBoardAndPieces() {
 	cameraViewUtility.SetView();
 	cameraViewUtility.SetCamera();
@@ -23,13 +28,18 @@ void DrawCheckerBoardAndPieces() {
 	glFlush();
 }
 
-void Mouse(int button, int state, int x, int y) {
-	if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-
+void menu(int item) {
+	switch(item) {
+		case START:
+			break;
+		case RESTART:
+			break;
+		default:
+			break;
 	}
-	if(button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
 
-	}
+	glutPostRedisplay();
+	return;
 }
 
 int main(int argc, char** argv){
@@ -39,7 +49,12 @@ int main(int argc, char** argv){
 	glutInitWindowSize(400, 400);
 	glutCreateWindow(argv[0]);
 	glutDisplayFunc(DrawCheckerBoardAndPieces);
-	glutMouseFunc(Mouse);
+
+	glutCreateMenu(menu);
+	glutAddMenuEntry("Start", START);
+	glutAddMenuEntry("Restart", RESTART);
+	glutAttachMenu(GLUT_RIGHT_BUTTON);
+
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 	glShadeModel(GL_SMOOTH);
