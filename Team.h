@@ -8,7 +8,7 @@
 
 class Team {
 public:
-	void DrawTeam();
+	void DrawTeam(int moveNumber);
 };
 
 

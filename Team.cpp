@@ -2,10 +2,13 @@
 // Created by Chris Procak on 11/6/2016.
 //
 
+#include <string>
 #include "Team.h"
 #include "CameraViewUtility.h"
 #include "Piece.h"
 #include "FileUtility.h"
+
+using namespace std;
 
 CameraViewUtility cameraViewTeam;
 FileUtility fileUtility;
@@ -37,13 +40,16 @@ void InitializeArrayWithEmptyPieces() {
 	}
 
 }
-void CreateArrayWithPieces() {
+void CreateArrayWithPieces(int moveNumber) {
 	InitializeArrayWithEmptyPieces();
-	fileUtility.ReadFromFileAndPopulateArray(GreenPieces, sizeOfTeam, "GreenMove37.dat");
-	fileUtility.ReadFromFileAndPopulateArray(RedPieces, sizeOfTeam, "RedMove37.dat");
+	string greenMoveNumber = "GreenMove" + std::to_string(moveNumber) + ".dat";
+	string redMoveNumber = "RedMove" + std::to_string(moveNumber) + ".dat";
+	fileUtility.ReadFromFileAndPopulateArray(GreenPieces, sizeOfTeam, greenMoveNumber.c_str());
+	fileUtility.ReadFromFileAndPopulateArray(RedPieces, sizeOfTeam, redMoveNumber.c_str());
 }
-void Team::DrawTeam() {
-	CreateArrayWithPieces();
+
+void Team::DrawTeam(int moveNumber) {
+	CreateArrayWithPieces(moveNumber);
 	DrawRedTeam();
 	DrawGreenTeam();
 }

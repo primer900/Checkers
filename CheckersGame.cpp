@@ -10,6 +10,7 @@
 CameraViewUtility cameraViewUtility;
 Board board;
 Team team;
+int moveNumber = 0;
 
 enum Options {
 	START,
@@ -23,7 +24,10 @@ void DrawCheckerBoardAndPieces() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	board.DrawBoard();
-	team.DrawTeam();
+	team.DrawTeam(moveNumber);
+
+	if(moveNumber <= 37)
+		moveNumber += 1;
 
 	glFlush();
 }
@@ -33,6 +37,7 @@ void menu(int item) {
 		case START:
 			break;
 		case RESTART:
+			moveNumber = 0;
 			break;
 		default:
 			break;
