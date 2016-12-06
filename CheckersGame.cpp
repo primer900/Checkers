@@ -26,7 +26,7 @@ void DrawCheckerBoardAndPieces() {
 	board.DrawBoard();
 	team.DrawTeam(moveNumber);
 
-	if(moveNumber <= 37)
+	if(moveNumber < 37)
 		moveNumber += 1;
 
 	glFlush();

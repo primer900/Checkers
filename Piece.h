@@ -15,6 +15,10 @@ public:
 	double x, y, z;
 	char State;
 	~Piece();
+
+private:
+	void DrawCylinder();
+	void DrawDisk();
 };
 
 
