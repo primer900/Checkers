@@ -5,7 +5,6 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <cstdio>
-#include <math.h>
 #include "Piece.h"
 
 Piece::Piece() {}
@@ -18,15 +17,13 @@ void Piece::DrawPiece(char state) {
 			glScaled(0.1, 0.1, 0.1);
 			glRotated(90, 1, 0, 0);
 			DrawCylinder();
-
 			DrawDisk();
-
 			glPopMatrix();
 			break;
 		case 'k':
 			glPushMatrix();
 			glTranslated(x, y, z);
-			glScaled(0.1, -0.2, 0.1);
+			glScaled(0.1, -0.2, 0.1); // -0.2 is for y so that the checker piece can actually become twice the size.
 			glRotated(90, 1, 0, 0);
 			DrawCylinder();
 			DrawDisk();
@@ -44,20 +41,20 @@ void Piece::SetPosition(double x_position, double y_position, double z_position)
 	z = z_position;
 }
 
-Piece::~Piece(void) {}
+Piece::~Piece(void) {
+	gluDeleteQuadric(quad);
+}
 
 void Piece::SetState(char state) {
 	State = state;
+	quad = gluNewQuadric();
+	gluQuadricNormals(quad, GLU_SMOOTH);
 }
 
 void Piece::DrawCylinder() {
-	GLUquadricObj * quad = gluNewQuadric();
-	gluQuadricNormals(quad, GLU_SMOOTH);
 	gluCylinder(quad, 1.0, 1.0, 1.0, 10, 10);
 }
 
 void Piece::DrawDisk() {
-	GLUquadricObj * quad = gluNewQuadric();
-	gluQuadricNormals(quad, GLU_SMOOTH);
 	gluDisk(quad, 0.0, 1.0, 10, 10);
 }

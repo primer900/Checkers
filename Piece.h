@@ -4,7 +4,8 @@
 
 #ifndef CHECKERS_CHECKERPIECE_H
 #define CHECKERS_CHECKERPIECE_H
-
+#include <GL/gl.h>
+#include <GL/glut.h>
 
 class Piece {
 public:
@@ -14,6 +15,7 @@ public:
 	void SetState(char state);
 	double x, y, z;
 	char State;
+	GLUquadricObj * quad;
 	~Piece();
 
 private:

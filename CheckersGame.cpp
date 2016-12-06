@@ -33,7 +33,7 @@ void DrawCheckerBoardAndPieces() {
 }
 
 void menu(int item) {
-	switch(item) {
+	switch (item) {
 		case START:
 			break;
 		case RESTART:
