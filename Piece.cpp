@@ -30,7 +30,7 @@ void Piece::DrawPiece(char state) {
 			glPopMatrix();
 			break;
 		default:
-			printf("Error drawing the pieces");
+			printf("Error drawing the pieces\n");
 			break;
 	}
 }
