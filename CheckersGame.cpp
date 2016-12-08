@@ -20,6 +20,8 @@ enum Options {
 	RESTART
 };
 
+const int NumberOfMovesInGame = 37;
+
 void DrawCheckerBoardAndPieces() {
 	cameraViewUtility.SetView();
 	cameraViewUtility.SetCamera();
@@ -28,8 +30,6 @@ void DrawCheckerBoardAndPieces() {
 
 	board.DrawBoard();
 	team.DrawTeam(moveNumber);
-/*	if(moveNumber < 37)
-		moveNumber++;*/
 
 	glFlush();
 }
@@ -45,7 +45,7 @@ void AnimateCheckerGame(int zero) {
 
 	glutPostRedisplay();
 	glutTimerFunc(1000, AnimateCheckerGame, moveNumber);
-	if(moveNumber < 37 && Animate)
+	if(moveNumber < NumberOfMovesInGame && Animate)
 		moveNumber++;
 	glFlush();
 }
@@ -64,16 +64,24 @@ void menu(int item) {
 			break;
 		case RESTART:
 			moveNumber = 0;
+			Animate = false;
 			break;
 		default:
 			break;
 	}
-
 	glutPostRedisplay();
 	return;
 }
 
-int main(int argc, char** argv){
+void Mouse(int button, int state, int x, int y) {
+	if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
+		if(moveNumber < NumberOfMovesInGame)
+			moveNumber++;
+		glutPostRedisplay();
+	}
+}
+
+int main(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
 	glutInitWindowPosition(100, 100);
@@ -87,6 +95,8 @@ int main(int argc, char** argv){
 	glutAddMenuEntry("Stop", STOP);
 	glutAddMenuEntry("Restart", RESTART);
 	glutAttachMenu(GLUT_RIGHT_BUTTON);
+
+	glutMouseFunc(Mouse);
 
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
