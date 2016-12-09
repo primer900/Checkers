@@ -13,14 +13,14 @@ Team team;
 int moveNumber = 0;
 bool Animate = false;
 
-enum Options {
+enum Options { //This is where the different options are first defined.
 	START,
 	RESUME,
 	STOP,
 	RESTART
 };
 
-const int NumberOfMovesInGame = 37;
+const int NumberOfMovesInGame = 37; //Extracted to represent the total .dat files to read for each team.
 
 void DrawCheckerBoardAndPieces() {
 	cameraViewUtility.SetView();
@@ -44,13 +44,13 @@ void AnimateCheckerGame(int zero) {
 	team.DrawTeam(moveNumber);
 
 	glutPostRedisplay();
-	glutTimerFunc(1000, AnimateCheckerGame, moveNumber);
+	glutTimerFunc(1000, AnimateCheckerGame, moveNumber); //This will start a timer and increment to the next move.
 	if(moveNumber < NumberOfMovesInGame && Animate)
 		moveNumber++;
 	glFlush();
 }
 
-void menu(int item) {
+void menu(int item) { //A swtich case statement for each of the possible menu options. Sets the Animate flag.
 	switch (item) {
 		case START:
 			glutTimerFunc(1000, AnimateCheckerGame, 0);

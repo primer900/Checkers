@@ -18,11 +18,11 @@ void DrawCube(double x, double y, double z) {
 }
 
 void DrawGoldSquares() {
-	cameraViewBoard.Lights(0.792f, 0.659f, 0.020f);
+	cameraViewBoard.Lights(0.792f, 0.659f, 0.020f); //The RGB color for Gold.
 
 	for(int x = 0; x < 4; x++)
 		for(int z = 0; z < 4; z++) {
-			DrawCube(0.5 * x - 1, -0.9, z * -0.5);
+			DrawCube(0.5 * x - 1, -0.9, z * -0.5); //These math formulass are necessary in order to draw the correct squares.
 			DrawCube(0.5 * x - 0.75, -0.9, 0.5 * z - 1.75);
 		}
 }

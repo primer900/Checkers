@@ -10,7 +10,7 @@
 Piece::Piece() {}
 
 void Piece::DrawPiece(char state) {
-	switch (state) {
+	switch (state) { //The switch case will draw either a normal piece or a kinged piece.
 		case 'n':
 			glPushMatrix();
 			glTranslated(x, y + 0.05, z); // + 0.05 is there to correct for translation in the y direction.
@@ -47,7 +47,7 @@ Piece::~Piece(void) {
 
 void Piece::SetState(char state) {
 	State = state;
-	quad = gluNewQuadric();
+	quad = gluNewQuadric(); //glutNewQuadric is needed in order to get the cylinder and disks to draw.
 	gluQuadricNormals(quad, GLU_SMOOTH);
 }
 

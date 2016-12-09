@@ -19,7 +19,7 @@ void CameraViewUtility::SetCamera() {
 	gluLookAt(0.5, 1.5, 2, 0, 0, 0, 0.0, 1.0, 0.0);
 }
 
-void CameraViewUtility::Lights(float red, float green, float blue) {
+void CameraViewUtility::Lights(float red, float green, float blue) { //Will set the lights based on RGB colors.
 	GLfloat mat_ambient[] = { 1.0f, 0.0f, 0.0f, 1.0f};
 	GLfloat mat_diffuse[] = {red, green, blue, 1.0f};
 	GLfloat mat_specular[] = {1.0f, 0.0f, 0.0f, 1.0f};

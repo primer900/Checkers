@@ -13,7 +13,7 @@ void FileUtility::ReadFromFileAndPopulateArray(Piece **team, int sizeOfTeam, con
 	char state;
 	move.open(file);
 
-	for(int i = 0; i < sizeOfTeam; i ++) {
+	for(int i = 0; i < sizeOfTeam; i ++) { //This for loop reads the x, y, and z positions and also the state of the piece.
 		move >> x >> y >> z >> state;
 		team[i]->SetPosition(x, y , z);
 		team[i]->SetState(state);
